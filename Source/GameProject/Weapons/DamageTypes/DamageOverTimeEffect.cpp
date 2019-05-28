@@ -108,5 +108,5 @@ void UDamageOverTimeEffect::SetNegativeStatusEffect(struct FDamageEvent const& D
 	else if (DamageEvent.DamageTypeClass->IsChildOf(UIceDamageType::StaticClass()))
 		SetNegativeStatusEffect(ENegativeStatusEffects::Freezing);
 	else
-		SetNegativeStatusEffect(ENegativeStatusEffects::Corriding);
+		SetNegativeStatusEffect(ENegativeStatusEffects::Corroding);
 }
