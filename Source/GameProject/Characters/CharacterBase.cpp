@@ -190,6 +190,7 @@ void ACharacterBase::BeginDash()
 		DisableInput(GetWorld()->GetFirstPlayerController());
 
 	CharacterMeshReference->SetHiddenInGame(true);
+	//TODO - need to also hide any weapons or gadgets that the player has currently equipped and stop any actions they are attempting to perform
 
 	GetWorldTimerManager().SetTimer(DashHandle, this, &ACharacterBase::EndDash, 0.3f);
 
